@@ -95,15 +95,23 @@
 				width:450px;
 				text-align: center;
 				align-items: center;
-				
 				display: block;
 			}
 			.main {
 				display: block;
 			}
 			.menu-buttons {
-				width: 100%;
-				
+				width: 110%;
+				margin: auto;
+				display: block;
+			}
+			button {
+				padding: 5px 15px;
+				font-size: 11px;
+			}
+			#color {
+				padding: 10px 15px;
+
 			}
 
 		}
