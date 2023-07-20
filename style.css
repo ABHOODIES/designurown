@@ -95,7 +95,7 @@
 				width:450px;
 				text-align: center;
 				align-items: center;
-				margin: 15px;
+				
 				display: block;
 			}
 			.main {
@@ -103,7 +103,7 @@
 			}
 			.menu-buttons {
 				width: 100%;
-				margin: 35px;
+				
 			}
 
 		}
