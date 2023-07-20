@@ -75,6 +75,7 @@
 		body {
 			background-image: url("Untitled-3.svg");
 			background-size: 59%;
+			overflow-x: hidden;
 		}
 
 		.main {
@@ -98,10 +99,13 @@
 				display: block;
 			}
 			.main {
+				width: 96%;
 				display: block;
+				margin: auto;
+				
 			}
 			.menu-buttons {
-				width: 100%;
+				width: 90%;
 				margin: auto;
 				display: block;
 			}
