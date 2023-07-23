@@ -12,7 +12,17 @@
 </head>
 
 <body>
+	
 	<div class="main">
+			<img alt="" src='#' id='uploaded1'>
+			<img alt=""src='#' id='uploaded2'>
+			<img alt=""src='#' id='uploaded3'>
+			<img alt=""src='#' id='uploaded4'>
+			<img alt=""src='#' id='uploaded5'>
+			<img alt=""src='#' id='uploaded6'>
+			<img alt=""src='#' id='uploaded7'>
+			<img alt=""src='#' id='uploaded8'>
+			<img alt=""src='#' id='uploaded9'>
 		<div _ngcontent-c0="" class="your-product-design-view clearfix" bis_skin_checked="1">
 			<div _ngcontent-c0="" class="your-jacket col-sm-6" bis_skin_checked="1">
 				<!----><front-jacket _ngcontent-c0="" _nghost-c2=""><svg _ngcontent-c2="" xml:space="preserve"
@@ -539,22 +549,108 @@
 			</div>
 		</div>
 	</div>
-	<div class="menu-buttons">
-		<input id="colorpicker" type="color">
+	<div class="pickmenu">
+		
+		<button class="backbtn" onclick="backb()">BACK</button>
+			<button class="pickmenubtn" onclick="showcolorsmenu()">CUSTOMIZE JACKET COLORS</button>
+			<button class="pickmenubtn" onclick="showlogosmenu()">CUSTOMIZE JACKET LOGO'S</button>
+		<div class="menu-buttons colorchange">
+			<input id="colorpicker" type="color">
 
-		<div class="colors">
-			<input id="color" type="text" disabled placeholder="Pick a color" oninput="getValue()">
-		</div>
+			<div class="colors">
+				<input id="color" type="text" disabled placeholder="Pick a color" oninput="getValue()">
+			</div>
 
-		<div class="grid-container">
-			<button class="grid-item" onclick="makeRed()">Stripes</button>
-			<button class="grid-item" onclick="makewhite()">Rib</button>
-			<button class="grid-item" onclick="whitebody()">Body</button>
-			<button class="grid-item" onclick="sleeves()">Sleeves</button>
-			<button class="grid-item" onclick="pockets()">Pocket</button>
-			<button class="grid-item" onclick="buttons()">Buttons</button>
+			<div class="grid-container">
+				<button class="grid-item" onclick="makeRed()">Stripes</button>
+				<button class="grid-item" onclick="makewhite()">Rib</button>
+				<button class="grid-item" onclick="whitebody()">Body</button>
+				<button class="grid-item" onclick="sleeves()">Sleeves</button>
+				<button class="grid-item" onclick="pockets()">Pocket</button>
+				<button class="grid-item" onclick="buttons()">Buttons</button>
+			</div>
+			<div id="show-color">Color test</div>
 		</div>
-		<div id="show-color">Color test</div>
+		<div class="menu-buttons logos">
+			<h3 class="uppertext">Place custom your logo</h3>
+
+			<div class="grid-container">
+					<form class="grid-item" method="post" onsubmit="return false">
+					  <div class="picture">
+						<input id="img1" type="file" name="admin_picture">
+						<i class='fa fa-camera'></i>
+						<h3>Left sleeve</h3>
+					  </div>
+					</form>
+					<form class="grid-item" method="post" onsubmit="return false">
+					  <div class="picture">
+						<input id="img2" type="file" name="admin_picture">
+						<i class='fa fa-camera'></i>
+						<h3>Right sleeve</h3>
+					  </div>
+					</form>
+					<form class="grid-item" method="post" onsubmit="return false">
+						<div class="picture">
+						  <input id="img3" type="file" name="admin_picture">
+						  <i class='fa fa-camera'></i>
+						  <h3>Left Wrist</h3>
+						</div>
+					  </form>
+					  <form class="grid-item" method="post" onsubmit="return false">
+						<div class="picture">
+						  <input id="img4" type="file" name="admin_picture">
+						  <i class='fa fa-camera'></i>
+						  <h3>Right Wrist</h3>
+						</div>
+					  </form>
+					<form class="grid-item" method="post" onsubmit="return false">
+						<div class="picture">
+						  <input id="img5" type="file" name="admin_picture">
+						  <i class='fa fa-camera'></i>
+						  <h3>Chest Right</h3>
+						</div>
+					  </form>
+					  <form class="grid-item" method="post" onsubmit="return false">
+						<div class="picture">
+						  <input id="img6" type="file" name="admin_picture" placeholder="text">
+						  <i class='fa fa-camera'></i>
+						  <h3>Chest Left</h3>
+						</div>
+					  </form>
+					  
+					  <form class="grid-item" method="post" onsubmit="return false">
+						<div class="picture">
+						  <input id="img7" type="file" name="admin_picture">
+						  <i class='fa fa-camera'></i>
+						  <h3>Upper back</h3>
+						</div>
+					  </form>
+					  <form class="grid-item" method="post" onsubmit="return false">
+						<div class="picture">
+						  <input id="img8" type="file" name="admin_picture">
+						  <i class='fa fa-camera'></i>
+						  <h3>Middle back</h3>
+						</div>
+					  </form>
+					  <form class="grid-item" method="post" onsubmit="return false">
+						<div class="picture">
+						  <input id="img9" type="file" name="admin_picture">
+						  <i class='fa fa-camera'></i>
+						  <h3>Lower back</h3>
+						</div>
+					  </form>
+				</div>
+				<!-- <input id="uploadImg" type="file" accept=".png, .jpg, .jpeg" class="grid-item" >Left Sleeve</input>
+				<input id="uploadImg" type="file" accept=".png, .jpg, .jpeg" class="grid-item" >Left Wrist Sleeve (+15 AED)</input>
+				<input id="uploadImg" type="file" accept=".png, .jpg, .jpeg" class="grid-item" >Right Wrist Sleeve (+15 AED)</input>
+				<input id="uploadImg" type="file" accept=".png, .jpg, .jpeg" class="grid-item" >Right Sleeve (+15 AED)</input>
+				<input id="uploadImg" type="file" accept=".png, .jpg, .jpeg" class="grid-item" >Left Chest</input>
+				<input id="uploadImg" type="file" accept=".png, .jpg, .jpeg" class="grid-item" >Right Chest (+15 AED)</input>
+				<input id="uploadImg" type="file" accept=".png, .jpg, .jpeg" class="grid-item" >Middle Back</input>
+				<input id="uploadImg" type="file" accept=".png, .jpg, .jpeg" class="grid-item" >Lower Back (+15 AED)</input>
+				<input id="uploadImg" type="file" accept=".png, .jpg, .jpeg" class="grid-item" >Upper Back (+15 AED)</input> -->
+			</div>
+		</div>
 	</div>
 
 </body>
