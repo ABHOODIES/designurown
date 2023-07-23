@@ -2,11 +2,13 @@
 
 * {
 	font-family: 'Raleway', sans-serif;
-	font-weight: 600;
+	font-weight: 900;
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
+
+
 
 
 
@@ -66,6 +68,10 @@ button {
 .backbtn {
 	position: absolute;
 }
+.clearbtn {
+	position: absolute;
+	margin-left:250px;
+}
 
 button:hover {
 	border: 1px solid #565656;
@@ -88,7 +94,7 @@ button:hover {
 
 body {
 	background-image: url("Untitled-3.svg");
-	background-size: 59%;
+	background-size: 69%;
 	overflow-x: hidden;
 }
 
@@ -168,10 +174,9 @@ img {
 
 }
 
-* {
-	font-weight: 100;
+.clearbtn {
+	display: none;
 }
-
 
 #uploaded1 {
 	margin: 50px 0 250px -100px;
@@ -215,9 +220,16 @@ img {
 
 }
 
+.cal {
+	position: relative;
+	float: right;
+}
 
 
 @media only screen and (max-width: 900px) {
+	body {
+		background-size: 180%
+	}
 	img {
 		max-width: 55px;
 		margin: auto;
@@ -333,5 +345,17 @@ img {
 		max-width: 150px;
 	
 	}
+
+}
+a {
+	text-decoration: none;
+	border-radius: 5px;
+	background-color: #bae2e9;
+	border: 1px solid #56565600;
+	position: absolute;
+	color: black;
+	font-weight: 900;
+	font-size: small;
+	padding: 10px;
 
 }
