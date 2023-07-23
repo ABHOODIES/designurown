@@ -224,7 +224,18 @@ img {
 	position: relative;
 	float: right;
 }
+a {
+	text-decoration: none;
+	border-radius: 5px;
+	background-color: #bae2e9;
+	border: 1px solid #56565600;
+	position: absolute;
+	color: black;
+	font-weight: 900;
+	font-size: small;
+	padding: 10px;
 
+}
 
 @media only screen and (max-width: 900px) {
 	body {
@@ -243,7 +254,10 @@ img {
 	}
 
 	.backbtn {
-		margin-right: 260px;
+		margin-right: 240px;
+	}
+	.clearbtn {
+		margin-left: 190px;
 	}
 	.grid-container form .picture input {
 		text-align: center;
@@ -305,57 +319,45 @@ img {
 
 	}
 	#uploaded1 {
-		margin: 90px 0 0 100px;
+		margin: 120px 0 0 170px;
 	}
 	
 	#uploaded3 {
-		margin: 295px 0 0 100px;
+		margin: 335px 0 0 170px;
 		max-width: 45px;
 	}
 	
 	#uploaded2 {
-		margin: 90px 0 0 -175px;
+		margin: 120px 0 0 -90px;
 	}
 	
 	#uploaded4 {
-		margin: 295px 0 0 -160px;
+		margin: 335px 0 0 -80px;
 		max-width: 45px;
 	}
 	
 	#uploaded5 {
-		margin: 90px 0 0 -95px;
+		margin: 120px 0 0 -15px;
 	}
 	
 	#uploaded6 {
-		margin: 90px 0 0 10px;
+		margin: 120px 0 0 95px;
 	}
 	
 	#uploaded7 {
-		margin: 440px 0 0 -88px;
+		margin: 470px 0 0 -8px;
 		max-width: 150px;
 	}
 	
 	#uploaded8 {
-		margin: 490px 0 0 -65px;
+		margin: 520px 0 0 15px;
 		max-width: 100px;
 	}
 	
 	#uploaded9 {
-		margin: 600px 0 0 -88px;
+		margin: 620px 0 0 -8px;
 		max-width: 150px;
 	
 	}
-
-}
-a {
-	text-decoration: none;
-	border-radius: 5px;
-	background-color: #bae2e9;
-	border: 1px solid #56565600;
-	position: absolute;
-	color: black;
-	font-weight: 900;
-	font-size: small;
-	padding: 10px;
 
 }
