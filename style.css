@@ -219,6 +219,11 @@ img {
 
 
 @media only screen and (max-width: 900px) {
+	img {
+		max-width: 55px;
+		margin: auto;
+		position: absolute;
+	}
 	.your-jacket {
 		width: 350px;
 		text-align: center;
@@ -280,6 +285,47 @@ img {
 		padding: 5px;
 		font-size: 11px;
 
+	}
+	#uploaded1 {
+		margin: 90px 0 0 100px;
+	}
+	
+	#uploaded3 {
+		margin: 295px 0 0 100px;
+		max-width: 45px;
+	}
+	
+	#uploaded2 {
+		margin: 90px 0 0 -175px;
+	}
+	
+	#uploaded4 {
+		margin: 295px 0 0 -160px;
+		max-width: 45px;
+	}
+	
+	#uploaded5 {
+		margin: 90px 0 0 -95px;
+	}
+	
+	#uploaded6 {
+		margin: 90px 0 0 10px;
+	}
+	
+	#uploaded7 {
+		margin: 440px 0 0 -88px;
+		max-width: 150px;
+	}
+	
+	#uploaded8 {
+		margin: 490px 0 0 -65px;
+		max-width: 100px;
+	}
+	
+	#uploaded9 {
+		margin: 600px 0 0 -88px;
+		max-width: 150px;
+	
 	}
 
 }
