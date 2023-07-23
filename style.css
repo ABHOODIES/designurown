@@ -1,659 +1,337 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Customize your own jacket</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="style.css" />
+* {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 
-</head>
 
-<body>
+
+.colors {
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+
+.grid-container {
+	display: grid;
+	gap: 15px 50px;
+	grid-template-columns: auto auto auto;
+	background-color: #f8f8f8;
+	padding: 5px;
+
+}
+
+#show-color {
+	background-color: #ffffff;
+	border-radius: 5px;
+	padding: 50px;
+	margin-top: 15px;
+	text-align: center;
+	color: wheat;
+}
+
+#color {
+	border: 1px solid #56565648;
+	padding: 15px 30px;
+	outline: none;
+	border-radius: 5px;
+	text-align: center;
+}
+
+#color:hover {
+	border: 1px solid #565656;
+
+}
+
+button {
+	transition: 0.1s;
+	padding: 20px 20px;
+	text-align: center;
+	border-radius: 5px;
+	background-color: #bae2e9;
+	border: 1px solid #56565600;
+	cursor: pointer;
+	color: #0e0e0e;
+	margin: 5px;
+
+}
+
+.backbtn {
+	position: absolute;
+}
+
+button:hover {
+	border: 1px solid #565656;
+}
+
+.menu-buttons {
+	border: 2px dashed black;
+	margin: auto;
+	margin-top: 100px;
+	background-color: #f8f8f8;
+	border-radius: 5px;
+	display: grid;
+	width: 75%;
+	padding: 10px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+
+}
+
+body {
+	background-image: url("Untitled-3.svg");
+	background-size: 59%;
+	overflow-x: hidden;
+}
+
+.uppertext {
+	text-align: center;
+	padding: 50px 20px;
+}
+
+.menu-buttons {
+	display: none
+}
+
+.pickmenu {
+	padding: 3.5%;
+	display: inline-flex;
+	width: 100%;
+	justify-content: center;
+	background-color: #f8f8f8;
+}
+
+.backbtn {
+	display: none;
+}
+
+.main {
+	width: 100%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.your-jacket {
+	width: 550px;
+	padding: 6px;
+}
+
+.grid-container form {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	display: inline-flex;
+	width: 150px;
+	margin: auto;
+	padding: 5px;
+}
+
+img {
+	max-width: 85px;
+	margin: auto;
+	position: absolute;
+}
+
+.grid-container form .picture {
+	transition: 0.1s;
+	text-align: center;
+	border-radius: 5px;
+	background-color: #bae2e9;
+	border: 3px solid #56565600;
+	cursor: pointer;
+	color: #0e0e0e;
+	padding-bottom: 20px;
+}
+
+.grid-container form .picture:hover {
+	background-color: #263238;
+	color: #aaa;
+	border: 3px solid #263238;
+}
+
+.grid-container form .picture:hover i {
+	color: #aaa;
+}
+
+.grid-container form .picture input {
+	opacity: 0;
+
+}
+
+* {
+	font-weight: 100;
+}
+
+
+#uploaded1 {
+	margin: 50px 0 250px -100px;
+}
+
+#uploaded3 {
+	margin: 50px 0 -250px -100px;
+	max-width: 55px;
+}
+
+#uploaded2 {
+	margin: 50px 0 250px -1000px;
+}
+
+#uploaded4 {
+	margin: 50px 0 -250px -1000px;
+	max-width: 55px;
+}
+
+#uploaded5 {
+	margin: 50px 0 250px -725px;
+}
+
+#uploaded6 {
+	margin: 50px 0 250px -390px;
+}
+
+#uploaded7 {
+	margin: 50px 0 325px 550px;
+	max-width: 200px;
+}
+
+#uploaded8 {
+	margin-left: 545px;
+	max-width: 150px;
+}
+
+#uploaded9 {
+	margin: 50px 0 -205px 550px;
+	max-width: 200px;
+
+}
+
+
+
+@media only screen and (max-width: 900px) {
+	img {
+		max-width: 55px;
+		margin: auto;
+		position: absolute;
+	}
+	.your-jacket {
+		width: 350px;
+		text-align: center;
+		align-items: center;
+		display: block;
+	}
+
+	.backbtn {
+		margin-right: 260px;
+	}
+	.grid-container form .picture input {
+		text-align: center;
+		margin-left: -25px;
+		width: 100px;
+		height: 20px;
+		padding: 10px 50px 10px 0px;
+
+	}
+	.main {
+		width: 96%;
+		display: block;
+		margin: auto;
+
+	}
+
+	h3 {
+		width: 75px;
+	}
+
+	.uppertext {
+		text-align: center;
+		display: inline-flex;
+		margin: auto;
+		width: 250px;
+	}
+
+	.menu-buttons {
+		width: 90%;
+		margin: auto;
+		display: grid;
+	}
+
+	button {
+		padding: 5px 15px;
+		font-size: 11px;
+	}
+
+	#color {
+		padding: 10px 15px;
+
+	}
+
+	.menu-buttons {
+		display: none
+	}
+
+	.grid-container form {
+		width: 50px;
+	}
+
+	.grid-container {
+		display: grid;
+		gap: 5px 20px;
+		grid-template-columns: auto auto auto;
+		background-color: #f8f8f8;
+		padding: 5px;
+		font-size: 11px;
+
+	}
+	#uploaded1 {
+		margin: 90px 0 0 100px;
+	}
 	
-	<div class="main">
-			<img alt=""src='https://i.imgur.com/hyBNpHK.png' id='uploaded1'>
-			<img alt=""src='https://i.imgur.com/hyBNpHK.png' id='uploaded2'>
-			<img alt=""src='https://i.imgur.com/hyBNpHK.png' id='uploaded3'>
-			<img alt=""src='https://i.imgur.com/hyBNpHK.png' id='uploaded4'>
-			<img alt=""src='https://i.imgur.com/hyBNpHK.png' id='uploaded5'>
-			<img alt=""src='https://i.imgur.com/hyBNpHK.png' id='uploaded6'>
-			<img alt=""src='https://i.imgur.com/hyBNpHK.png' id='uploaded7'>
-			<img alt=""src='https://i.imgur.com/hyBNpHK.png' id='uploaded8'>
-			<img alt=""src='https://i.imgur.com/hyBNpHK.png' id='uploaded9'>
-		<div _ngcontent-c0="" class="your-product-design-view clearfix" bis_skin_checked="1">
-			<div _ngcontent-c0="" class="your-jacket col-sm-6" bis_skin_checked="1">
-				<!----><front-jacket _ngcontent-c0="" _nghost-c2=""><svg _ngcontent-c2="" xml:space="preserve"
-						xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1"
-						style="enable-background:new 0 0 579.6 623.5;" version="1.1" viewBox="0 0 579.6 623.5" x="0px"
-						xmlns="http://www.w3.org/2000/svg" y="0px">
-						<style _ngcontent-c2="" type="text/css">
-							.f-st0 {
-								fill: #C51F47;
-							}
+	#uploaded3 {
+		margin: 295px 0 0 100px;
+		max-width: 45px;
+	}
+	
+	#uploaded2 {
+		margin: 90px 0 0 -175px;
+	}
+	
+	#uploaded4 {
+		margin: 295px 0 0 -160px;
+		max-width: 45px;
+	}
+	
+	#uploaded5 {
+		margin: 90px 0 0 -95px;
+	}
+	
+	#uploaded6 {
+		margin: 90px 0 0 10px;
+	}
+	
+	#uploaded7 {
+		margin: 440px 0 0 -88px;
+		max-width: 150px;
+	}
+	
+	#uploaded8 {
+		margin: 490px 0 0 -65px;
+		max-width: 100px;
+	}
+	
+	#uploaded9 {
+		margin: 600px 0 0 -88px;
+		max-width: 150px;
+	
+	}
 
-							.f-st1 {
-								fill: none;
-								stroke: #6E6E6E;
-								stroke-width: 2.5;
-								stroke-miterlimit: 10;
-							}
-
-							.f-st2 {
-								fill: #FFFFFF;
-							}
-
-							.f-st3 {
-								fill: none;
-								stroke: #6E6E6E;
-								stroke-width: 2.5;
-								stroke-linejoin: round;
-								stroke-miterlimit: 10;
-							}
-
-							.f-st4 {
-								fill: #6E6E6E;
-							}
-
-							.f-st5 {
-								fill: none;
-								stroke: #6E6E6E;
-								stroke-width: 1.2;
-								stroke-linejoin: round;
-							}
-
-							.f-st6 {
-								fill: none;
-								stroke: #6E6E6E;
-								stroke-width: 1.2;
-								stroke-linejoin: round;
-								stroke-dasharray: 2.9618, 2.9618;
-							}
-
-							.f-st7 {
-								fill: none;
-								stroke: #6E6E6E;
-								stroke-width: 1.2;
-								stroke-linejoin: round;
-								stroke-miterlimit: 10;
-								stroke-dasharray: 2;
-							}
-
-							.f-st8 {
-								fill: #C42047;
-								stroke: #6E6E6E;
-								stroke-width: 2.5;
-								stroke-miterlimit: 10;
-							}
-
-							.f-st9 {
-								opacity: 0.5;
-								fill: none;
-								stroke: #845757;
-								stroke-width: 2;
-								stroke-miterlimit: 10;
-							}
-
-							.f-st10 {
-								opacity: 0.5;
-								fill: none;
-								stroke: #845757;
-								stroke-width: 1.5;
-								stroke-miterlimit: 10;
-							}
-
-							/*.f-st11{fill:none;stroke:#000000;stroke-miterlimit:10;}*/
-							.f-st11,
-							.f-st12,
-							.f-st13 {
-								fill: none;
-							}
-
-							/*.f-st13{fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:3;}*/
-						</style>
-
-						<path _ngcontent-c2="" class="f-st0 jacket-body" d="M481.3,91.9c-5.3-5.3-36.2-17.1-36.2-17.1c-15.6-5.4-58.5-24.5-67-28.2h0c0,0-20-21.3-29.3-36.1
-			c-4.8-5.9-11.9-9.3-19.5-9.3h-29.6h-9h-39.6c-7.5,0-14.7,3.4-19.5,9.3c-9.3,14.8-18.6,29.6-28.8,35.4v0l0,0c0,0-51.1,22.9-68.4,28.9
-			c0,0-30.9,11.8-36.2,17.1c0,0,46.7,33.7,34.7,158.7l-5.3,46.7v207.1c0,7.1,2.2,14.1,6.3,19.9l5.8,8.2c1.6,2.3,2.6,5,2.9,7.9
-			l2.2,28.3c0.4,5.3,4.8,9.4,10.2,9.4h134.2h1h134.2c5.3,0,9.7-4.1,10.2-9.4l2.2-28.3c0.2-2.8,1.2-5.6,2.9-7.9l5.8-8.2
-			c4.1-5.8,6.3-12.7,6.3-19.9V297.3l-5.3-46.7C434.6,125.6,481.3,91.9,481.3,91.9z" id="XMLID_10_" style="fill: black;">
-						</path>
-						<path _ngcontent-c2="" class="f-st0 jacket-rib-1" d="M447.2,521.8c-0.5,0.8-1,1.6-1.6,2.4l-5.8,8.2c-1.6,2.3-2.6,5-2.9,7.9l-2.2,28.3c-0.4,5.3-4.8,9.4-10.2,9.4
-			H290.3h-1H155.1c-5.3,0-9.7-4.1-10.2-9.4l-2.2-28.3c-0.2-2.8-1.2-5.6-2.9-7.9l-5.8-8.2c-0.6-0.8-1.1-1.6-1.6-2.4H447.2z"
-							style="fill: black;"></path>
-						<line _ngcontent-c2="" class="f-st1" x1="132.4" x2="447.2" y1="521.8" y2="521.8"></line>
-						<path _ngcontent-c2="" class="f-st2 jacket-rib-2"
-							d="M437.2,538.8c-0.1,0.5-0.2,1-0.2,1.5l-0.5,6.5H143.2l-0.5-6.5c0-0.5-0.1-1-0.2-1.5H437.2z"
-							style="fill: rgb(255, 255, 255);"></path>
-						<polygon _ngcontent-c2="" class="f-st2 jacket-rib-2"
-							points="143.6,552.8 436,552.8 435.3,560.8 144.3,560.8 " style="fill: rgb(255, 255, 255);">
-						</polygon>
-						<path _ngcontent-c2="" class="f-st0 jacket-rib-1" d="M82.7,622.3h-50c-1.5,0-2.8-1.2-2.9-2.7l-2.5-33.9c-0.4-3.1-1.7-6-3.7-8.2l-9.9-9.5h86.7L91,579.5
-			c-1.4,2-2.3,4.4-2.6,7l-2.9,33.2C85.4,621.1,84.2,622.3,82.7,622.3z" style="fill: black;"></path>
-						<polygon _ngcontent-c2="" class="f-st2 jacket-rib-2"
-							points="28.7,604.9 28.3,598.8 87.4,598.8 86.8,604.9 " style="fill: rgb(255, 255, 255);">
-						</polygon>
-						<path _ngcontent-c2="" class="f-st2 jacket-sleeves" d="M2.3,358.6c5.3-54,50-229.3,96-266.7c0,0,46.7,33.7,34.7,158.7l-3.7,32.6l0,0c0,0-7.1,29-11.8,43
-			c-4.7,14-10.5,23.3-11.1,34.7c-0.7,11.3-5.7,8.7-6.3,22c-0.7,13.3,0.3,185,0.3,185H13.6C13.6,567.9-3,412.6,2.3,358.6z"
-							style="fill: rgb(255, 255, 255);"></path>
-						<path _ngcontent-c2="" class="f-st3" d="M2.3,358.6c5.3-54,50-229.3,96-266.7c0,0,46.7,33.7,34.7,158.7l-3.7,32.6l0,0c0,0-7.1,29-11.8,43
-			c-4.7,14-10.5,23.3-11.1,34.7c-0.7,11.3-5.7,8.7-6.3,22c-0.7,13.3,0.3,185,0.3,185H13.6C13.6,567.9-3,412.6,2.3,358.6z">
-						</path>
-						<path _ngcontent-c2="" class="f-st2 jacket-rib-2"
-							d="M88.7,584.8c-0.1,0.6-0.2,1.1-0.3,1.7l-0.4,4.5H27.7l-0.4-5.2c0-0.3-0.1-0.6-0.1-0.9H88.7z"
-							style="fill: rgb(255, 255, 255);"></path>
-						<path _ngcontent-c2="" class="f-st3" d="M82.7,622.3h-50c-1.5,0-2.8-1.2-2.9-2.7l-2.5-33.9c-0.4-3.1-1.7-6-3.7-8.2l-9.9-9.5h86.7L91,579.5
-			c-1.4,2-2.3,4.4-2.6,7l-2.9,33.2C85.4,621.1,84.2,622.3,82.7,622.3z"></path>
-						<path _ngcontent-c2="" class="f-st4" d="M115.8,230.8c0,0,4.5,43,15,54.5s1.5,20,21,42.5c0,0-15.3-14-18-32.8c0,0,0.1-3.1-5.8-10
-			C122.9,278.9,115.8,260,115.8,230.8z"></path>
-						<path _ngcontent-c2="" class="f-st4"
-							d="M95,362.2c0,0-29.9-2.3-65.3-11.6C29.6,350.6,67.5,364.3,95,362.2z"></path>
-						<path _ngcontent-c2="" class="f-st4"
-							d="M95.4,362.5c0,0-30,1.1-66.2-4.1C29.2,358.5,68.3,367.7,95.4,362.5z"></path>
-						<path _ngcontent-c2="" class="f-st4"
-							d="M6,483.4c-1.3-17-2.5-34.9-3.4-52.1l0.7-0.6c-1.5,51,21,107,21,107C16.3,522.4,10.3,502,6,483.4z">
-						</path>
-						<g _ngcontent-c2="">
-							<g _ngcontent-c2="" id="XMLID_26_">
-								<path _ngcontent-c2="" class="f-st5" d="M95,96c0,0,0.4,0.4,1,1.1" id="XMLID_27_"></path>
-								<path _ngcontent-c2="" class="f-st6"
-									d="M98,99.3c6.9,8.2,23.9,31.9,29.8,72.5c4.9,34,2.9,105.1,2.3,120.5" id="XMLID_28_">
-								</path>
-								<path _ngcontent-c2="" class="f-st5" d="M130,293.8c0,1-0.1,1.5-0.1,1.5" id="XMLID_29_">
-								</path>
-							</g>
-						</g>
-						<line _ngcontent-c2="" class="f-st7" x1="99.3" x2="14.8" y1="560.8" y2="560.8"></line>
-						<line _ngcontent-c2="" class="f-st7" x1="99.3" x2="14.8" y1="563.8" y2="563.8"></line>
-						<path _ngcontent-c2="" class="f-st0 jacket-rib-1" d="M496.9,622.3h50c1.5,0,2.8-1.2,2.9-2.7l2.5-33.9c0.4-3.1,1.7-6,3.7-8.2l9.9-9.5h-86.7l9.3,11.6
-			c1.4,2,2.3,4.4,2.6,7l2.9,33.2C494.2,621.1,495.4,622.3,496.9,622.3z" style="fill: black;"></path>
-						<polygon _ngcontent-c2="" class="f-st2 jacket-rib-2"
-							points="550.9,604.9 551.3,598.8 492.2,598.8 492.7,604.9 " style="fill: rgb(255, 255, 255);">
-						</polygon>
-						<path _ngcontent-c2="" class="f-st2 jacket-sleeves"
-							d="M577.3,358.6c-5.3-54-50-229.3-96-266.7c0,0-46.7,33.7-34.7,158.7l3.7,32.6l0,0c0,0,7.1,29,11.8,43
-			c4.7,14,10.5,23.3,11.1,34.7c0.7,11.3,5.7,8.7,6.3,22c0.7,13.3-0.3,185-0.3,185h86.7C565.9,567.9,582.6,412.6,577.3,358.6z" style="fill: rgb(255, 255, 255);"></path>
-						<path _ngcontent-c2="" class="f-st3"
-							d="M577.3,358.6c-5.3-54-50-229.3-96-266.7c0,0-46.7,33.7-34.7,158.7l3.7,32.6l0,0c0,0,7.1,29,11.8,43
-			c4.7,14,10.5,23.3,11.1,34.7c0.7,11.3,5.7,8.7,6.3,22c0.7,13.3-0.3,185-0.3,185h86.7C565.9,567.9,582.6,412.6,577.3,358.6z"></path>
-						<path _ngcontent-c2="" class="f-st2 jacket-rib-2"
-							d="M490.8,584.8c0.1,0.6,0.2,1.1,0.3,1.7l0.4,4.5h60.4l0.4-5.2c0-0.3,0.1-0.6,0.1-0.9H490.8z"
-							style="fill: rgb(255, 255, 255);"></path>
-						<path _ngcontent-c2="" class="f-st3" d="M496.9,622.3h50c1.5,0,2.8-1.2,2.9-2.7l2.5-33.9c0.4-3.1,1.7-6,3.7-8.2l9.9-9.5h-86.7l9.3,11.6
-			c1.4,2,2.3,4.4,2.6,7l2.9,33.2C494.2,621.1,495.4,622.3,496.9,622.3z"></path>
-						<path _ngcontent-c2="" class="f-st4" d="M463.8,230.8c0,0-4.5,43-15,54.5s-1.5,20-21,42.5c0,0,15.3-14,18-32.8c0,0-0.1-3.1,5.8-10
-			C456.7,278.9,463.8,260,463.8,230.8z"></path>
-						<path _ngcontent-c2="" class="f-st4"
-							d="M476.3,342.7c0,0,27.6,6.9,62.2,9.2C538.5,351.9,500.4,352.9,476.3,342.7z"></path>
-						<path _ngcontent-c2="" class="f-st4"
-							d="M489.4,368.1c0,0,25.7-4.2,55.8-13.6C545.1,354.5,513.3,367.2,489.4,368.1z"></path>
-						<g _ngcontent-c2="">
-							<g _ngcontent-c2="" id="XMLID_41_">
-								<path _ngcontent-c2="" class="f-st5" d="M484.6,96c0,0-0.4,0.4-1,1.1" id="XMLID_42_">
-								</path>
-								<path _ngcontent-c2="" class="f-st6"
-									d="M481.6,99.3c-6.9,8.2-23.9,31.9-29.8,72.5c-4.9,34-2.9,105.1-2.3,120.5"
-									id="XMLID_43_">
-								</path>
-								<path _ngcontent-c2="" class="f-st5" d="M449.5,293.8c0,1,0.1,1.5,0.1,1.5"
-									id="XMLID_44_">
-								</path>
-							</g>
-						</g>
-						<line _ngcontent-c2="" class="f-st7" x1="480.3" x2="564.8" y1="560.8" y2="560.8"></line>
-						<line _ngcontent-c2="" class="f-st7" x1="480.3" x2="564.8" y1="563.8" y2="563.8"></line>
-						<path _ngcontent-c2="" class="f-st4"
-							d="M556.9,383.2c1.4-1.8,3.4,82.1-10.1,113.3C546.8,496.5,567.8,444.5,556.9,383.2z"></path>
-						<path _ngcontent-c2="" class="f-st4"
-							d="M511.5,514.9c-0.6,1.6-19.5-56-16.6-80.4C494.8,434.5,491.1,474.8,511.5,514.9z"></path>
-						<path _ngcontent-c2="" class="f-st0 jacket-rib-1" d="M371.8,41.3c-7.9-7.3-15.2-19-22.6-30.8c-4.8-5.9-11.9-9.3-19.5-9.3h-29.6h-9h-39.6
-			c-7.5,0-14.7,3.4-19.5,9.3c-7.4,11.7-14.8,23.5-22.6,30.8H371.8z" id="XMLID_11_" style="fill: black;">
-						</path>
-						<path _ngcontent-c2="" class="f-st2 jacket-rib-2"
-							d="M349.8,11.5H231.5c-1.7,2.7-3.4,5.4-5.1,8h128.5C353.1,16.9,351.5,14.2,349.8,11.5z"
-							id="XMLID_51_" style="fill: rgb(255, 255, 255);"></path>
-						<rect _ngcontent-c2="" class="f-st8 jacket-rib-1" height="56.6" width="71" x="255.5" y="521.3"
-							style="fill: black;"></rect>
-						<path _ngcontent-c2="" class="f-st2 jacket-rib-2"
-							d="M358.8,25.5H222.4c-1.9,2.8-3.9,5.5-5.8,8h148.1C362.7,31,360.8,28.3,358.8,25.5z"
-							id="XMLID_54_" style="fill: rgb(255, 255, 255);"></path>
-						<circle _ngcontent-c2="" class="f-st2 jacket-buttons" cx="295.5" cy="149.7" id="XMLID_55_"
-							r="7.7" style="fill: rgb(255, 255, 255);"></circle>
-						<circle _ngcontent-c2="" class="f-st2 jacket-buttons" cx="295.5" cy="238.4" id="XMLID_56_"
-							r="7.7" style="fill: rgb(255, 255, 255);"></circle>
-						<circle _ngcontent-c2="" class="f-st2 jacket-buttons" cx="295.5" cy="325.8" id="XMLID_57_"
-							r="7.7" style="fill: rgb(255, 255, 255);"></circle>
-						<circle _ngcontent-c2="" class="f-st2 jacket-buttons" cx="295.5" cy="414.8" id="XMLID_58_"
-							r="7.7" style="fill: rgb(255, 255, 255);"></circle>
-						<circle _ngcontent-c2="" class="f-st2 jacket-buttons" cx="295.5" cy="501.8" id="XMLID_59_"
-							r="7.7" style="fill: rgb(255, 255, 255);"></circle>
-						<circle _ngcontent-c2="" class="f-st2 jacket-buttons" cx="295.5" cy="539.8" id="XMLID_60_"
-							r="7.7" style="fill: rgb(255, 255, 255);"></circle>
-						<circle _ngcontent-c2="" class="f-st2 jacket-buttons" cx="295.5" cy="562.8" id="XMLID_61_"
-							r="7.7" style="fill: rgb(255, 255, 255);"></circle>
-						<path _ngcontent-c2="" class="f-st9"
-							d="M451,511.4l-40.5-170.7h0c-46.4,0-84,37.6-84,84v97H447C448.9,518.5,450.3,515,451,511.4z"
-							id="XMLID_64_"></path>
-						<polygon _ngcontent-c2="" class="f-st2 jacket-pocket" id="XMLID_65_"
-							points="185.7,353.8 157.3,471.8 162.4,472.8 190.8,354.8 " style="fill: rgb(255, 255, 255);">
-						</polygon>
-						<polygon _ngcontent-c2="" class="f-st2 jacket-pocket" id="XMLID_66_"
-							points="177,352.1 148.5,470.1 153.6,471.1 182,353.1 " style="fill: rgb(255, 255, 255);">
-						</polygon>
-						<polygon _ngcontent-c2="" class="f-st2 jacket-pocket"
-							points="396.6,353.8 425,471.8 419.9,472.8 391.5,354.8 " style="fill: rgb(255, 255, 255);">
-						</polygon>
-						<polygon _ngcontent-c2="" class="f-st2 jacket-pocket"
-							points="405.3,352.1 433.8,470.1 428.7,471.1 400.3,353.1 " style="fill: rgb(255, 255, 255);">
-						</polygon>
-						<path _ngcontent-c2="" class="f-st1" d="M206.8,64.5c0,0-71.5,28-80.5,31.5s-14.5,12-14.5,12"
-							id="XMLID_67_"></path>
-						<path _ngcontent-c2="" class="f-st1" d="M373.8,64.5c0,0,71.5,28,80.5,31.5s14.5,12,14.5,12">
-						</path>
-						<path _ngcontent-c2="" class="f-st3" d="M371.8,41.3c-7.9-7.3-15.2-19-22.6-30.8c-4.8-5.9-11.9-9.3-19.5-9.3h-29.6h-9h-39.6
-			c-7.5,0-14.7,3.4-19.5,9.3c-7.4,11.7-14.8,23.5-22.6,30.8H371.8z" id="XMLID_68_"></path>
-						<path _ngcontent-c2="" class="f-st0 jacket-rib-1" d="M339.4,35.5c0,0,10.7-22.3-3.8-33.8c2.6,0.3,11.2,3.8,14.5,8.8c8.3,12.6,14.7,23.2,22.7,30.8l1.5,4.2
-			c0,0,7.5,18-9,34l-52.3,54.8h-40L339.4,35.5z" style="fill: black;"></path>
-						<path _ngcontent-c2="" class="f-st2 jacket-rib-2"
-							d="M310,134.3l63-92.8l-0.1-0.3c-1.7-1.6-3.3-3.4-4.9-5.2l-66.8,98.3H310z" id="XMLID_69_"
-							style="fill: rgb(255, 255, 255);"></path>
-						<path _ngcontent-c2="" class="f-st1" d="M339.4,35.5c0,0,10.7-22.3-3.8-33.8c2.6,0.3,11.2,3.8,14.5,8.8c8.3,12.6,14.7,23.2,22.7,30.8l1.5,4.2
-			c0,0,7.5,18-9,34l-52.3,54.8h-40L339.4,35.5z"></path>
-						<polygon _ngcontent-c2="" class="f-st2 jacket-rib-2" id="XMLID_70_"
-							points="294.2,134.3 363,33 358.7,26.5 285.4,134.3 " style="fill: rgb(255, 255, 255);">
-						</polygon>
-						<path _ngcontent-c2="" class="f-st0 jacket-rib-1" d="M242.8,35.5c0,0-10.7-22.3,3.8-33.8c-2.6,0.3-11.2,3.8-14.5,8.8c-8.3,12.6-14.7,23.2-22.7,30.8
-			l-1.5,4.2c0,0-7.5,18,9,34l52.3,54.8h40L242.8,35.5z" id="XMLID_71_" style="fill: black;"></path>
-						<path _ngcontent-c2="" class="f-st2 jacket-rib-2"
-							d="M220.4,28l72.2,106.3h8.8L224.8,21.6C223.3,23.8,221.9,26,220.4,28z" id="XMLID_74_"
-							style="fill: rgb(255, 255, 255);"></path>
-						<path _ngcontent-c2="" class="f-st2 jacket-rib-2"
-							d="M211.9,38.7l65,95.6h8.8L216.8,33C215.2,35,213.6,36.9,211.9,38.7z" id="XMLID_77_"
-							style="fill: rgb(255, 255, 255);"></path>
-						<path _ngcontent-c2="" class="f-st9"
-							d="M255.5,521.7v-97c0-46.4-37.6-84-84-84h0l-41.8,175.8c0.7,1.8,1.5,3.5,2.5,5.2H255.5z"
-							id="XMLID_80_"></path>
-						<path _ngcontent-c2="" class="f-st1" d="M481.3,91.9c-5.3-5.3-36.2-17.1-36.2-17.1C430,69.6,389.3,51.6,379,47c-0.6-0.3-1.2-0.7-1.6-1.2
-			c-3.7-4.2-21.1-24.4-27.8-36c-4.8-5.9-12.7-8.5-20.3-8.5h-29.6h-9h-39.6c-7.5,0-14.7,3.4-19.5,9.3c-9.3,14.8-18.6,29.6-28.8,35.4v0
-			c0,0-51.1,22.9-68.4,28.9c0,0-30.9,11.8-36.2,17.1c0,0,46.7,33.7,34.7,158.7l-5.3,46.7v207.1c0,7.1,2.2,14.1,6.3,19.9l5.8,8.2
-			c1.6,2.3,2.6,5,2.9,7.9l2.2,28.3c0.4,5.3,4.8,9.4,10.2,9.4h134.2h1h134.2c5.3,0,9.7-4.1,10.2-9.4l2.2-28.3c0.2-2.8,1.2-5.6,2.9-7.9
-			l5.8-8.2c4.1-5.8,6.3-12.7,6.3-19.9V297.3l-5.3-46.7C434.6,125.6,481.3,91.9,481.3,91.9z" id="XMLID_83_"></path>
-						<line _ngcontent-c2="" class="f-st1" id="XMLID_84_" x1="308" x2="308" y1="578.3" y2="134.3">
-						</line>
-						<line _ngcontent-c2="" class="f-st1" id="XMLID_85_" x1="268.7" x2="268.7" y1="521.3" y2="134.3">
-						</line>
-						<path _ngcontent-c2="" class="f-st1" d="M242.8,35.5c0,0-10.7-22.3,3.8-33.8c-2.6,0.3-11.2,3.8-14.5,8.8c-8.3,12.6-14.7,23.2-22.7,30.8
-			l-1.5,4.2c0,0-7.5,18,9,34l52.3,54.8h40L242.8,35.5z" id="XMLID_86_"></path>
-						<line _ngcontent-c2="" class="f-st1" id="XMLID_87_" x1="387.3" x2="408.3" y1="355.8" y2="351.9">
-						</line>
-						<line _ngcontent-c2="" class="f-st1" id="XMLID_88_" x1="416.2" x2="437.3" y1="473" y2="469.2">
-						</line>
-						<g _ngcontent-c2="" id="XMLID_89_">
-							<line _ngcontent-c2="" class="f-st1" id="XMLID_90_" x1="387.3" x2="408.3" y1="355.8"
-								y2="351.9">
-							</line>
-							<line _ngcontent-c2="" class="f-st1" id="XMLID_91_" x1="416.2" x2="437.3" y1="473"
-								y2="469.2">
-							</line>
-						</g>
-						<g _ngcontent-c2="" id="XMLID_92_">
-							<line _ngcontent-c2="" class="f-st1" x1="195.3" x2="174.2" y1="355.8" y2="351.9"></line>
-							<line _ngcontent-c2="" class="f-st1" x1="166.3" x2="145.3" y1="473" y2="469.2"></line>
-						</g>
-
-						<g _ngcontent-c2="" class="front-top-right-parent">
-							<path _ngcontent-c2="" class="f-st10" d="M1178.7,472.7v-80c0,0,2.3-95.3,69.6-95.3"
-								id="XMLID_95_">
-							</path>
-							<rect _ngcontent-c2="" class="f-st11 design-place-outline out front-top-right" height="116"
-								id="XMLID_96_" width="115.2" x="319.6" y="149.1"></rect>
-							<rect _ngcontent-c2="" class="f-st12" height="96" id="XMLID_102_" width="95.2" x="329.6"
-								y="159.1">
-							</rect>
-							<rect _ngcontent-c2="" class="f-st13 design-place-outline in front-top-right" height="108"
-								id="XMLID_101_" width="107.2" x="323.6" y="153.1"></rect>
-						</g>
-						<g _ngcontent-c2="" class="front-top-left-parent">
-							<rect _ngcontent-c2="" class="f-st11 design-place-outline out front-top-left" height="116"
-								id="XMLID_104_" width="115.2" x="143.6" y="149.1"></rect>
-							<rect _ngcontent-c2="" class="f-st12" height="96" id="XMLID_103_" width="95.2" x="153.6"
-								y="159.1">
-							</rect>
-							<rect _ngcontent-c2="" class="f-st13 design-place-outline in front-top-left" height="108"
-								id="XMLID_100_" width="107.2" x="147.6" y="153.1"></rect>
-							<rect _ngcontent-c2="" class="f-st12" height="116" id="XMLID_97_" width="115.2" x="143.6"
-								y="149.1">
-							</rect>
-						</g>
-					</svg>
-				</front-jacket>
-				<!---->
-				<!---->
-				<!---->
-				<!---->
-
-			</div>
-
-			<div _ngcontent-c0="" class="your-jacket-description col-sm-6" bis_skin_checked="1">
-				<form _ngcontent-c0="" name="form" novalidate="" class="ng-untouched ng-pristine ng-valid">
-
-
-
-				</form>
-			</div>
-		</div>
-		<div _ngcontent-c0="" class="your-product-design-view clearfix" bis_skin_checked="1">
-			<div _ngcontent-c0="" class="your-jacket col-sm-6" bis_skin_checked="1">
-				<back-jacket _ngcontent-c0="" _nghost-c3=""><svg _ngcontent-c3="" xml:space="preserve"
-						xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1"
-						style="enable-background:new 0 0 579.6 623.5;" version="1.1" viewBox="0 0 579.6 623.5" x="0px"
-						xmlns="http://www.w3.org/2000/svg" y="0px">
-						<style _ngcontent-c3="" type="text/css">
-							.b-st0 {
-								fill: #C51F47;
-							}
-
-							.b-st1 {
-								fill: none;
-								stroke: #6E6E6E;
-								stroke-width: 2.5;
-								stroke-miterlimit: 10;
-							}
-
-							.b-st2 {
-								fill: #FFFFFF;
-							}
-
-							.b-st3 {
-								fill: none;
-								stroke: #6E6E6E;
-								stroke-width: 2.5;
-								stroke-linejoin: round;
-								stroke-miterlimit: 10;
-							}
-
-							.b-st4 {
-								fill: #6E6E6E;
-							}
-
-							.b-st5 {
-								fill: none;
-								stroke: #6E6E6E;
-								stroke-width: 1.2;
-								stroke-linejoin: round;
-							}
-
-							.b-st6 {
-								fill: none;
-								stroke: #6E6E6E;
-								stroke-width: 1.2;
-								stroke-linejoin: round;
-								stroke-dasharray: 2.9618, 2.9618;
-							}
-
-							.b-st7 {
-								fill: none;
-								stroke: #6E6E6E;
-								stroke-width: 1.2;
-								stroke-linejoin: round;
-								stroke-miterlimit: 10;
-								stroke-dasharray: 2;
-							}
-
-							/*.b-st8{fill:none;stroke:#000000;stroke-miterlimit:10;}*/
-							/*.b-st9{fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:3;}*/
-							.b-st10,
-							.b-st8,
-							.b-st9 {
-								fill: none;
-							}
-						</style>
-						<path _ngcontent-c3="" class="b-st0 jacket-rib-1" d="M202.9,45.9c6.4,14,80.1,14,86.8,14c-0.3,0-0.5,0-0.5,0h1c0,0-0.2,0-0.5,0c6.8,0,80.5,0,86.8-14
-		c-10.2-5.8-19.5-20.7-28.8-35.4c-4.8-5.9-11.9-9.3-19.5-9.3h-39.6h-9h-29.6c-7.5,0-14.7,3.4-19.5,9.3c-9.3,14.8-18.6,29.6-28.8,35.4
-		l-0.5,0.7C202.4,46.2,202.9,45.9,202.9,45.9z" style="fill: black;"></path>
-						<path _ngcontent-c3="" class="b-st0 jacket-body"
-							d="M290.3,59.9c0,0-80.7,0.7-87.3-14c0,0-51.1,22.9-68.4,28.9c0,0-30.9,11.8-36.2,17.1c0,0,46.7,33.7,34.7,158.7
-		l-5.3,46.7v207.1c0,7.1,2.2,14.1,6.3,19.9l5.8,8.2c1.6,2.3,2.6,5,2.9,7.9l2.2,28.3c0.4,5.3,4.8,9.4,10.2,9.4h135.2h-1h135.2
-		c5.3,0,9.7-4.1,10.2-9.4l2.2-28.3c0.2-2.8,1.2-5.6,2.9-7.9l5.8-8.2c4.1-5.8,6.3-12.7,6.3-19.9V297.3l-5.3-46.7
-		c-12-125,34.7-158.7,34.7-158.7c-5.3-5.3-36.2-17.1-36.2-17.1c-17.3-6-68.4-28.9-68.4-28.9c-6.7,14.7-87.3,14-87.3,14H290.3z" style="fill: black;"></path>
-						<path _ngcontent-c3="" class="b-st0 jacket-rib-1" d="M132.4,521.8c0.5,0.8,1,1.6,1.6,2.4l5.8,8.2c1.6,2.3,2.6,5,2.9,7.9l2.2,28.3c0.4,5.3,4.8,9.4,10.2,9.4h134.2h1
-		h134.2c5.3,0,9.7-4.1,10.2-9.4l2.2-28.3c0.2-2.8,1.2-5.6,2.9-7.9l5.8-8.2c0.6-0.8,1.1-1.6,1.6-2.4H132.4z"
-							style="fill: black;"></path>
-						<line _ngcontent-c3="" class="b-st1" x1="447.1" x2="132.4" y1="521.8" y2="521.8"></line>
-						<path _ngcontent-c3="" class="b-st2 jacket-rib-2"
-							d="M142.4,538.8c0.1,0.5,0.2,1,0.2,1.5l0.5,6.5h293.3l0.5-6.5c0-0.5,0.1-1,0.2-1.5H142.4z"
-							style="fill: rgb(255, 255, 255);"></path>
-						<polygon _ngcontent-c3="" class="b-st2 jacket-rib-2"
-							points="435.9,552.8 143.6,552.8 144.2,560.8 435.3,560.8 " style="fill: rgb(255, 255, 255);">
-						</polygon>
-						<path _ngcontent-c3="" class="b-st0 jacket-rib-1" d="M496.9,622.3h50c1.5,0,2.8-1.2,2.9-2.7l2.5-33.9c0.4-3.1,1.7-6,3.7-8.2l9.9-9.5h-86.7l9.3,11.6
-		c1.4,2,2.3,4.4,2.6,7l2.9,33.2C494.2,621.1,495.4,622.3,496.9,622.3z" style="fill: black;"></path>
-						<polygon _ngcontent-c3="" class="b-st2 jacket-rib-2"
-							points="550.9,604.9 551.3,598.8 492.2,598.8 492.7,604.9 " style="fill: rgb(255, 255, 255);">
-						</polygon>
-						<path _ngcontent-c3="" class="b-st2 jacket-rib-2"
-							d="M218.9,28.5h140.6c-1.8-2.5-3.6-5.2-5.4-8H224.4C222.6,23.3,220.8,26,218.9,28.5z"
-							style="fill: rgb(255, 255, 255);"></path>
-						<path _ngcontent-c3="" class="b-st2 jacket-rib-2"
-							d="M206.7,42.5h165.1c-2.6-2.2-5.2-4.9-7.7-8H214.4C211.9,37.6,209.3,40.3,206.7,42.5z"
-							style="fill: rgb(255, 255, 255);"></path>
-						<path _ngcontent-c3="" class="b-st1"
-							d="M290.3,59.9c0,0-80.7,0.7-87.3-14c0,0-51.1,22.9-68.4,28.9c0,0-30.9,11.8-36.2,17.1c0,0,46.7,33.7,34.7,158.7
-		l-5.3,46.7v207.1c0,7.1,2.2,14.1,6.3,19.9l5.8,8.2c1.6,2.3,2.6,5,2.9,7.9l2.2,28.3c0.4,5.3,4.8,9.4,10.2,9.4h135.2h-1h135.2
-		c5.3,0,9.7-4.1,10.2-9.4l2.2-28.3c0.2-2.8,1.2-5.6,2.9-7.9l5.8-8.2c4.1-5.8,6.3-12.7,6.3-19.9V297.3l-5.3-46.7
-		c-12-125,34.7-158.7,34.7-158.7c-5.3-5.3-36.2-17.1-36.2-17.1c-17.3-6-68.4-28.9-68.4-28.9c-6.7,14.7-87.3,14-87.3,14H290.3z"></path>
-						<path _ngcontent-c3="" class="b-st1" d="M202.9,45.9c6.4,14,80.1,14,86.8,14c-0.3,0-0.5,0-0.5,0h1c0,0-0.2,0-0.5,0c6.8,0,80.5,0,86.8-14
-		c-10.2-5.8-19.5-20.7-28.8-35.4c-4.8-5.9-11.9-9.3-19.5-9.3h-39.6h-9h-29.6c-7.5,0-14.7,3.4-19.5,9.3c-9.3,14.8-18.6,29.6-28.8,35.4
-		l-0.5,0.7C202.4,46.2,202.9,45.9,202.9,45.9z"></path>
-						<path _ngcontent-c3="" class="b-st2 jacket-sleeves"
-							d="M577.3,358.6c-5.3-54-50-229.3-96-266.7c0,0-46.7,33.7-34.7,158.7l3.7,32.6l0,0c0,0,7.1,29,11.8,43
-		c4.7,14,10.5,23.3,11.1,34.7c0.7,11.3,5.7,8.7,6.3,22c0.7,13.3-0.3,185-0.3,185h86.7C565.9,567.9,582.6,412.6,577.3,358.6z" style="fill: rgb(255, 255, 255);"></path>
-						<path _ngcontent-c3="" class="b-st3"
-							d="M577.3,358.6c-5.3-54-50-229.3-96-266.7c0,0-46.7,33.7-34.7,158.7l3.7,32.6l0,0c0,0,7.1,29,11.8,43
-		c4.7,14,10.5,23.3,11.1,34.7c0.7,11.3,5.7,8.7,6.3,22c0.7,13.3-0.3,185-0.3,185h86.7C565.9,567.9,582.6,412.6,577.3,358.6z"></path>
-						<path _ngcontent-c3="" class="b-st2 jacket-rib-2"
-							d="M490.8,584.8c0.1,0.6,0.2,1.1,0.3,1.7l0.4,4.5h60.4l0.4-5.2c0-0.3,0.1-0.6,0.1-0.9H490.8z"
-							style="fill: rgb(255, 255, 255);"></path>
-						<path _ngcontent-c3="" class="b-st3" d="M496.9,622.3h50c1.5,0,2.8-1.2,2.9-2.7l2.5-33.9c0.4-3.1,1.7-6,3.7-8.2l9.9-9.5h-86.7l9.3,11.6
-		c1.4,2,2.3,4.4,2.6,7l2.9,33.2C494.2,621.1,495.4,622.3,496.9,622.3z"></path>
-						<path _ngcontent-c3="" class="b-st4" d="M463.8,230.8c0,0-4.5,43-15,54.5s-1.5,20-21,42.5c0,0,15.3-14,18-32.8c0,0-0.1-3.1,5.8-10
-		C456.7,278.9,463.8,260,463.8,230.8z"></path>
-						<path _ngcontent-c3="" class="b-st4"
-							d="M484.6,362.2c0,0,29.9-2.3,65.3-11.6C549.9,350.6,512.1,364.3,484.6,362.2z"></path>
-						<path _ngcontent-c3="" class="b-st4"
-							d="M484.1,362.5c0,0,30,1.1,66.2-4.1C550.4,358.5,511.2,367.7,484.1,362.5z"></path>
-						<path _ngcontent-c3="" class="b-st4"
-							d="M573.6,483.4c1.3-17,2.5-34.9,3.4-52.1l-0.7-0.6c1.5,51-21,107-21,107C563.2,522.4,569.3,502,573.6,483.4z">
-						</path>
-						<g _ngcontent-c3="">
-							<g _ngcontent-c3="">
-								<path _ngcontent-c3="" class="b-st5" d="M484.6,96c0,0-0.4,0.4-1,1.1"></path>
-								<path _ngcontent-c3="" class="b-st6"
-									d="M481.6,99.3c-6.9,8.2-23.9,31.9-29.8,72.5c-4.9,34-2.9,105.1-2.3,120.5"></path>
-								<path _ngcontent-c3="" class="b-st5" d="M449.5,293.8c0,1,0.1,1.5,0.1,1.5"></path>
-							</g>
-						</g>
-						<line _ngcontent-c3="" class="b-st7" x1="480.3" x2="564.8" y1="560.8" y2="560.8"></line>
-						<line _ngcontent-c3="" class="b-st7" x1="480.3" x2="564.8" y1="563.8" y2="563.8"></line>
-						<path _ngcontent-c3="" class="b-st0 jacket-rib-1" d="M82.7,622.3h-50c-1.5,0-2.8-1.2-2.9-2.7l-2.5-33.9c-0.4-3.1-1.7-6-3.7-8.2l-9.9-9.5h86.7L91,579.5
-		c-1.4,2-2.3,4.4-2.6,7l-2.9,33.2C85.4,621.1,84.2,622.3,82.7,622.3z" style="fill: black;"></path>
-						<polygon _ngcontent-c3="" class="b-st2 jacket-rib-2"
-							points="28.7,604.9 28.3,598.8 87.4,598.8 86.8,604.9 " style="fill: rgb(255, 255, 255);">
-						</polygon>
-						<path _ngcontent-c3="" class="b-st2 jacket-sleeves" d="M2.3,358.6c5.3-54,50-229.3,96-266.7c0,0,46.7,33.7,34.7,158.7l-3.7,32.6l0,0c0,0-7.1,29-11.8,43
-		c-4.7,14-10.5,23.3-11.1,34.7c-0.7,11.3-5.7,8.7-6.3,22c-0.7,13.3,0.3,185,0.3,185H13.6C13.6,567.9-3,412.6,2.3,358.6z"
-							style="fill: rgb(255, 255, 255);"></path>
-						<path _ngcontent-c3="" class="b-st3" d="M2.3,358.6c5.3-54,50-229.3,96-266.7c0,0,46.7,33.7,34.7,158.7l-3.7,32.6l0,0c0,0-7.1,29-11.8,43
-		c-4.7,14-10.5,23.3-11.1,34.7c-0.7,11.3-5.7,8.7-6.3,22c-0.7,13.3,0.3,185,0.3,185H13.6C13.6,567.9-3,412.6,2.3,358.6z">
-						</path>
-						<path _ngcontent-c3="" class="b-st2 jacket-rib-2"
-							d="M88.7,584.8c-0.1,0.6-0.2,1.1-0.3,1.7l-0.4,4.5H27.7l-0.4-5.2c0-0.3-0.1-0.6-0.1-0.9H88.7z"
-							style="fill: rgb(255, 255, 255);"></path>
-						<path _ngcontent-c3="" class="b-st3" d="M82.7,622.3h-50c-1.5,0-2.8-1.2-2.9-2.7l-2.5-33.9c-0.4-3.1-1.7-6-3.7-8.2l-9.9-9.5h86.7L91,579.5
-		c-1.4,2-2.3,4.4-2.6,7l-2.9,33.2C85.4,621.1,84.2,622.3,82.7,622.3z"></path>
-						<path _ngcontent-c3="" class="b-st4" d="M115.8,230.8c0,0,4.5,43,15,54.5s1.5,20,21,42.5c0,0-15.3-14-18-32.8c0,0,0.1-3.1-5.8-10
-		C122.9,278.9,115.8,260,115.8,230.8z"></path>
-						<path _ngcontent-c3="" class="b-st4"
-							d="M103.2,342.7c0,0-27.6,6.9-62.2,9.2C41,351.9,79.1,352.9,103.2,342.7z"></path>
-						<path _ngcontent-c3="" class="b-st4"
-							d="M90.2,368.1c0,0-25.7-4.2-55.8-13.6C34.4,354.5,66.2,367.2,90.2,368.1z"></path>
-						<g _ngcontent-c3="">
-							<g _ngcontent-c3="">
-								<path _ngcontent-c3="" class="b-st5" d="M95,96c0,0,0.4,0.4,1,1.1"></path>
-								<path _ngcontent-c3="" class="b-st6"
-									d="M98,99.3c6.9,8.2,23.9,31.9,29.8,72.5c4.9,34,2.9,105.1,2.3,120.5"></path>
-								<path _ngcontent-c3="" class="b-st5" d="M130,293.8c0,1-0.1,1.5-0.1,1.5"></path>
-							</g>
-						</g>
-						<line _ngcontent-c3="" class="b-st7" x1="99.3" x2="14.8" y1="560.8" y2="560.8"></line>
-						<line _ngcontent-c3="" class="b-st7" x1="99.3" x2="14.8" y1="563.8" y2="563.8"></line>
-						<path _ngcontent-c3="" class="b-st4"
-							d="M23.7,381.9c-1.4-1.8-3.4,82.1,10.1,113.3C33.8,495.3,12.7,443.3,23.7,381.9z"></path>
-						<path _ngcontent-c3="" class="b-st4"
-							d="M68.1,514.9c0.6,1.6,19.5-56,16.6-80.4C84.7,434.5,88.4,474.8,68.1,514.9z"></path>
-
-						<g _ngcontent-c3="" class="back-center-parent">
-							<rect _ngcontent-c3="" class="b-st8 design-place-outline out back-center" height="174"
-								width="275.9" x="151.8" y="200.3"></rect>
-							<rect _ngcontent-c3="" class="b-st9 design-place-outline in back-center" height="166"
-								width="267.9" x="155.8" y="204.3"></rect>
-						</g>
-
-						<g _ngcontent-c3="" class="back-top-parent" font-size="40">
-							<rect _ngcontent-c3="" class="b-st8 design-place-outline out back-top" height="64"
-								width="255.9" x="161.8" y="120.3"></rect>
-							<rect _ngcontent-c3="" class="b-st9 design-place-outline in back-top" height="56"
-								width="248.5" x="165.5" y="124.3"></rect>
-							<text font="[object Object]" fill="#000" fontSize="40" text="" x="290" y="165"
-								text-anchor="middle" stroke-width="0" stroke="#000000"
-								style="font-family:CollegiateFLF;direction:ltr" height="56" width="248.5"></text>
-						</g>
-
-						<g _ngcontent-c3="" class="back-bottom-parent" font-size="40">
-							<rect _ngcontent-c3="" class="b-st8 design-place-outline out back-bottom" height="64"
-								width="255.9" x="161.8" y="391.7"></rect>
-							<rect _ngcontent-c3="" class="b-st9 design-place-outline in back-bottom" height="56"
-								width="248.5" x="165.5" y="395.7"></rect>
-							<text font="[object Object]" fill="#000" fontSize="40" x="290" y="435" text=""
-								text-anchor="middle" stroke-width="0" stroke="#000000"
-								style="font-family:CollegiateFLF;direction:ltr" height="56" width="248.5"></text>
-						</g>
-
-
-
-
-					</svg>
-				</back-jacket>
-			</div>
-		</div>
-	</div>
-	<div class="pickmenu">
-		
-		<button class="backbtn" onclick="backb()">BACK</button>
-			<button class="pickmenubtn" onclick="showcolorsmenu()">CUSTOMIZE JACKET COLORS</button>
-			<button class="pickmenubtn" onclick="showlogosmenu()">CUSTOMIZE JACKET LOGO'S</button>
-		<div class="menu-buttons colorchange">
-			<input id="colorpicker" type="color">
-
-			<div class="colors">
-				<input id="color" type="text" disabled placeholder="Pick a color" oninput="getValue()">
-			</div>
-
-			<div class="grid-container">
-				<button class="grid-item" onclick="makeRed()">Stripes</button>
-				<button class="grid-item" onclick="makewhite()">Rib</button>
-				<button class="grid-item" onclick="whitebody()">Body</button>
-				<button class="grid-item" onclick="sleeves()">Sleeves</button>
-				<button class="grid-item" onclick="pockets()">Pocket</button>
-				<button class="grid-item" onclick="buttons()">Buttons</button>
-			</div>
-			<div id="show-color">Color test</div>
-		</div>
-		<div class="menu-buttons logos">
-			<h3 class="uppertext">Place your custom logo</h3>
-
-			<div class="grid-container">
-					<form class="grid-item" method="post" onsubmit="return false">
-					  <div class="picture">
-						<input id="img1" type="file" name="admin_picture">
-						<i class='fa fa-camera'></i>
-						<h3>Left sleeve</h3>
-					  </div>
-					</form>
-					<form class="grid-item" method="post" onsubmit="return false">
-					  <div class="picture">
-						<input id="img2" type="file" name="admin_picture">
-						<i class='fa fa-camera'></i>
-						<h3>Right sleeve (+15 AED)</h3>
-					  </div>
-					</form>
-					<form class="grid-item" method="post" onsubmit="return false">
-						<div class="picture">
-						  <input id="img3" type="file" name="admin_picture">
-						  <i class='fa fa-camera'></i>
-						  <h3>Left Wrist (+15 AED)</h3>
-						</div>
-					  </form>
-					  <form class="grid-item" method="post" onsubmit="return false">
-						<div class="picture">
-						  <input id="img4" type="file" name="admin_picture">
-						  <i class='fa fa-camera'></i>
-						  <h3>Right Wrist (+15 AED)</h3>
-						</div>
-					  </form>
-					<form class="grid-item" method="post" onsubmit="return false">
-						<div class="picture">
-						  <input id="img5" type="file" name="admin_picture">
-						  <i class='fa fa-camera'></i>
-						  <h3>Chest Right</h3>
-						</div>
-					  </form>
-					  <form class="grid-item" method="post" onsubmit="return false">
-						<div class="picture">
-						  <input id="img6" type="file" name="admin_picture" placeholder="text">
-						  <i class='fa fa-camera'></i>
-						  <h3>Chest Left (+15 AED)</h3>
-						</div>
-					  </form>
-					  
-					  <form class="grid-item" method="post" onsubmit="return false">
-						<div class="picture">
-						  <input id="img7" type="file" name="admin_picture">
-						  <i class='fa fa-camera'></i>
-						  <h3>Upper back</h3>
-						</div>
-					  </form>
-					  <form class="grid-item" method="post" onsubmit="return false">
-						<div class="picture">
-						  <input id="img8" type="file" name="admin_picture">
-						  <i class='fa fa-camera'></i>
-						  <h3>Middle back</h3>
-						</div>
-					  </form>
-					  <form class="grid-item" method="post" onsubmit="return false">
-						<div class="picture">
-						  <input id="img9" type="file" name="admin_picture">
-						  <i class='fa fa-camera'></i>
-						  <h3>Lower back (+15 AED)</h3>
-						</div>
-					  </form>
-				</div>
-				<!-- <input id="uploadImg" type="file" accept=".png, .jpg, .jpeg" class="grid-item" >Left Sleeve</input>
-				<input id="uploadImg" type="file" accept=".png, .jpg, .jpeg" class="grid-item" >Left Wrist Sleeve (+15 AED)</input>
-				<input id="uploadImg" type="file" accept=".png, .jpg, .jpeg" class="grid-item" >Right Wrist Sleeve (+15 AED)</input>
-				<input id="uploadImg" type="file" accept=".png, .jpg, .jpeg" class="grid-item" >Right Sleeve (+15 AED)</input>
-				<input id="uploadImg" type="file" accept=".png, .jpg, .jpeg" class="grid-item" >Left Chest</input>
-				<input id="uploadImg" type="file" accept=".png, .jpg, .jpeg" class="grid-item" >Right Chest (+15 AED)</input>
-				<input id="uploadImg" type="file" accept=".png, .jpg, .jpeg" class="grid-item" >Middle Back</input>
-				<input id="uploadImg" type="file" accept=".png, .jpg, .jpeg" class="grid-item" >Lower Back (+15 AED)</input>
-				<input id="uploadImg" type="file" accept=".png, .jpg, .jpeg" class="grid-item" >Upper Back (+15 AED)</input> -->
-			</div>
-		</div>
-	</div>
-
-</body>
-<script src="script.js"></script>
-
-</html>
+}
