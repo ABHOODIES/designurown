@@ -10,6 +10,15 @@ const colorchange = document.querySelector(".colorchange")
 const logosmenu = document.querySelector(".logos")
 const pickmenu = document.querySelectorAll(".pickmenubtn")
 const backbtn = document.querySelector(".backbtn")
+const clearbtn = document.querySelector(".clearbtn")
+const imgs = document.querySelectorAll("img")
+
+
+function clearall() {
+	imgs.forEach(e => {
+		e.src = "https://i.imgur.com/hyBNpHK.png"
+	})
+}
 function backb() {
 	backbtn.style.display = "none"
 	logosmenu.style.display = "none"
@@ -18,6 +27,7 @@ function backb() {
 		e.style.display = "inline-flex"
 		return console.log("Done");
 	});
+	clearbtn.style.display = "none"
 }
 function showlogosmenu() {
 	pickmenu.forEach(e => {
@@ -26,6 +36,7 @@ function showlogosmenu() {
 	});
 	logosmenu.style.display = "block"
 	backbtn.style.display = "block"
+	clearbtn.style.display = "block"
 }
 function showcolorsmenu() {
 	pickmenu.forEach(e => {
