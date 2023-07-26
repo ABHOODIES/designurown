@@ -205,17 +205,18 @@ img {
 }
 
 #uploaded7 {
-	margin: 50px 0 325px 550px;
+	margin: 50px 0 465px 550px;
 	max-width: 200px;
 }
 
 #uploaded8 {
 	margin-left: 545px;
-	max-width: 150px;
+	margin-top: -30px;
+	max-width: 190px;
 }
 
 #uploaded9 {
-	margin: 50px 0 -205px 550px;
+	margin: 50px 0 -145px 550px;
 	max-width: 200px;
 
 }
